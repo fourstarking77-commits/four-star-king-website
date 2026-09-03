@@ -3,175 +3,320 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FOUR STAR KING CO., LTD.</title>
+
+<title>FOUR STAR KING CO., LTD. | Japan Career Support</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:Arial,"Noto Sans Myanmar",sans-serif;
-  color:#222;
+  color:#1f2937;
   line-height:1.7;
   background:#fff;
 }
+
 header{
   position:sticky;
   top:0;
   z-index:1000;
-  background:#fff;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
+  background:rgba(255,255,255,.97);
+  box-shadow:0 2px 18px rgba(0,0,0,.08);
 }
+
 .nav{
-  max-width:1150px;
+  max-width:1200px;
   margin:auto;
-  padding:15px 20px;
+  padding:16px 22px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
+
 .logo{
-  font-size:20px;
-  font-weight:800;
   color:#0b3d91;
+  font-size:22px;
+  font-weight:800;
+  line-height:1.1;
 }
+
 .logo span{
   display:block;
-  font-size:11px;
   color:#777;
-  letter-spacing:1px;
+  font-size:11px;
+  letter-spacing:2px;
+  margin-top:4px;
 }
-nav a{
-  text-decoration:none;
-  color:#333;
-  margin-left:20px;
-  font-size:14px;
-}
-nav a:hover{color:#0b3d91}
 
-.hero{
-  min-height:620px;
+nav{
   display:flex;
   align-items:center;
-  background:linear-gradient(135deg,#eef5ff,#fff);
 }
+
+nav a{
+  color:#333;
+  text-decoration:none;
+  margin-left:24px;
+  font-size:14px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#0b3d91;
+}
+
+.menu-btn{
+  display:none;
+  border:0;
+  background:#0b3d91;
+  color:white;
+  width:42px;
+  height:42px;
+  border-radius:10px;
+  font-size:23px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background:
+    radial-gradient(circle at 90% 20%,#dceaff 0,transparent 35%),
+    linear-gradient(135deg,#eef5ff,#fff);
+}
+
 .hero-inner{
-  max-width:1150px;
+  max-width:1200px;
   width:100%;
   margin:auto;
-  padding:70px 20px;
+  padding:90px 22px;
 }
-.hero h1{
-  font-size:52px;
-  line-height:1.15;
+
+.badge{
+  display:inline-block;
+  background:#dceaff;
   color:#0b3d91;
-  max-width:750px;
+  padding:7px 15px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:22px;
 }
+
+.hero h1{
+  color:#0b3d91;
+  font-size:58px;
+  line-height:1.08;
+  max-width:780px;
+  margin-bottom:22px;
+}
+
 .hero h2{
-  font-size:25px;
-  margin:20px 0;
+  font-size:27px;
+  margin-bottom:20px;
 }
+
 .hero p{
-  max-width:650px;
-  color:#555;
-  font-size:17px;
+  max-width:680px;
+  color:#5b6472;
+  font-size:18px;
 }
+
+.hero-buttons{
+  display:flex;
+  gap:14px;
+  margin-top:32px;
+  flex-wrap:wrap;
+}
+
 .btn{
   display:inline-block;
-  margin-top:28px;
-  padding:13px 28px;
+  padding:14px 28px;
   border-radius:30px;
   background:#0b3d91;
   color:#fff;
   text-decoration:none;
   font-weight:bold;
+  transition:.2s;
 }
-.btn:hover{background:#06295f}
+
+.btn:hover{
+  background:#06295f;
+  transform:translateY(-2px);
+}
+
+.btn-light{
+  background:white;
+  color:#0b3d91;
+  border:1px solid #d7e2f5;
+}
+
+/* COMMON */
 
 section{
-  padding:80px 20px;
+  padding:85px 22px;
 }
+
 .container{
-  max-width:1100px;
+  max-width:1120px;
   margin:auto;
 }
+
 .title{
   text-align:center;
-  margin-bottom:45px;
+  margin-bottom:48px;
 }
+
 .title h2{
   color:#0b3d91;
-  font-size:34px;
+  font-size:36px;
+  margin-bottom:5px;
 }
-.title p{color:#777}
+
+.title p{
+  color:#7b8491;
+}
+
+/* COMPANY */
 
 .about{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1.2fr .8fr;
   gap:45px;
   align-items:center;
 }
-.about-box{
-  background:#f5f8fc;
-  padding:30px;
-  border-radius:18px;
-}
-.about-box h3{
+
+.about h3{
   color:#0b3d91;
+  font-size:25px;
   margin-bottom:15px;
 }
+
+.about p{
+  color:#5d6673;
+  margin-bottom:15px;
+}
+
+.about-box{
+  background:#f3f7fd;
+  border-radius:22px;
+  padding:32px;
+  border:1px solid #e2ebf8;
+}
+
+.about-box h3{
+  font-size:22px;
+}
+
+.check{
+  padding:7px 0;
+  color:#374151;
+}
+
+/* JOBS */
+
+.jobs{
+  background:#f6f8fc;
+}
+
+.job-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.job{
+  background:white;
+  border-radius:18px;
+  padding:28px 20px;
+  text-align:center;
+  box-shadow:0 5px 25px rgba(0,0,0,.06);
+  border:1px solid #edf0f5;
+  transition:.2s;
+}
+
+.job:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(11,61,145,.13);
+}
+
+.job-icon{
+  font-size:35px;
+  margin-bottom:10px;
+}
+
+.job h3{
+  color:#0b3d91;
+  font-size:21px;
+}
+
+.job span{
+  display:block;
+  color:#777;
+  font-size:13px;
+  margin-top:3px;
+}
+
+/* SUPPORT */
 
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  gap:22px;
 }
+
 .card{
-  padding:28px;
+  padding:30px;
+  background:white;
+  border:1px solid #e8edf5;
   border-radius:18px;
-  background:#fff;
-  box-shadow:0 5px 25px rgba(0,0,0,.08);
+  box-shadow:0 5px 22px rgba(0,0,0,.05);
 }
+
+.card-icon{
+  font-size:30px;
+  margin-bottom:12px;
+}
+
 .card h3{
   color:#0b3d91;
   margin-bottom:10px;
 }
-.card p{color:#666}
 
-.jobs{
-  background:#f6f8fb;
-}
-.job-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-.job{
-  background:#fff;
-  padding:25px;
-  border-radius:15px;
-  text-align:center;
-  font-weight:bold;
-}
-.job span{
-  display:block;
-  font-size:13px;
-  color:#777;
-  font-weight:normal;
+.card p{
+  color:#697280;
+  font-size:14px;
 }
 
-.steps{
+/* PROCESS */
+
+.process{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  gap:22px;
 }
+
 .step{
-  padding:25px;
-  border:1px solid #e5e5e5;
-  border-radius:15px;
+  position:relative;
+  padding:30px;
+  border:1px solid #e5e9f0;
+  border-radius:18px;
+  background:white;
 }
+
 .step-number{
-  width:42px;
-  height:42px;
+  width:45px;
+  height:45px;
   border-radius:50%;
   background:#0b3d91;
   color:white;
@@ -179,49 +324,160 @@ section{
   align-items:center;
   justify-content:center;
   font-weight:bold;
-  margin-bottom:12px;
+  margin-bottom:15px;
 }
+
+.step h3{
+  margin-bottom:8px;
+  color:#25324a;
+}
+
+.step p{
+  color:#6b7280;
+  font-size:14px;
+}
+
+/* CONTACT */
 
 .contact{
   background:#0b3d91;
   color:white;
 }
-.contact .title h2{color:white}
-.contact-info{
+
+.contact .title h2{
+  color:white;
+}
+
+.contact .title p{
+  color:#d8e5ff;
+}
+
+.contact-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:30px;
+  gap:25px;
 }
+
 .contact-box{
   background:rgba(255,255,255,.1);
-  padding:30px;
-  border-radius:18px;
+  padding:32px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.15);
 }
+
+.contact-box h3{
+  margin-bottom:18px;
+}
+
+.contact-box p{
+  margin:13px 0;
+}
+
 .contact-box a{
-  color:#fff;
+  color:white;
   text-decoration:none;
 }
-.contact-box p{margin:10px 0}
+
+.contact .btn{
+  background:white;
+  color:#0b3d91;
+  margin-top:10px;
+}
+
+.contact .btn:hover{
+  background:#edf4ff;
+}
+
+/* FOOTER */
 
 footer{
   background:#061f48;
-  color:#ddd;
+  color:#cbd5e1;
   text-align:center;
-  padding:25px 15px;
+  padding:28px 15px;
   font-size:13px;
 }
 
+.footer-logo{
+  color:white;
+  font-weight:bold;
+  font-size:17px;
+  margin-bottom:5px;
+}
+
+/* MOBILE */
+
 @media(max-width:800px){
-  .nav{flex-direction:column;gap:10px}
-  nav a{margin:0 6px;font-size:12px}
-  .hero h1{font-size:38px}
-  .hero{min-height:520px}
+
+  .nav{
+    padding:14px 18px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    background:white;
+    flex-direction:column;
+    padding:12px 20px 20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  nav a{
+    width:100%;
+    margin:0;
+    padding:13px 5px;
+    border-bottom:1px solid #eee;
+  }
+
+  .hero{
+    min-height:600px;
+  }
+
+  .hero-inner{
+    padding:70px 22px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero h2{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
   .about,
-  .contact-info{grid-template-columns:1fr}
-  .cards,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
   .job-grid,
-  .steps{grid-template-columns:1fr}
-  section{padding:60px 18px}
+  .cards,
+  .process{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:65px 18px;
+  }
+
+  .title h2{
+    font-size:30px;
+  }
 }
 </style>
 </head>
@@ -230,12 +486,15 @@ footer{
 
 <header>
   <div class="nav">
+
     <div class="logo">
       FOUR STAR KING
       <span>CO., LTD.</span>
     </div>
 
-    <nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
       <a href="#home">Home</a>
       <a href="#company">会社紹介</a>
       <a href="#jobs">求人</a>
@@ -243,180 +502,329 @@ footer{
       <a href="#life">日本での生活</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
+
   </div>
 </header>
 
+
+<!-- HERO -->
+
 <section class="hero" id="home">
+
   <div class="hero-inner">
-    <h1>Start Your Career in Japan</h1>
-    <h2>日本で、あなたの未来をはじめよう。</h2>
+
+    <div class="badge">
+      🇯🇵 JAPAN CAREER SUPPORT
+    </div>
+
+    <h1>
+      Start Your Career<br>
+      in Japan
+    </h1>
+
+    <h2>
+      日本で、あなたの未来をはじめよう。
+    </h2>
+
     <p>
       FOUR STAR KING CO., LTD. supports Myanmar people
-      who want to work and build their future in Japan.
+      who want to work, live and build their future in Japan.
     </p>
-    <a class="btn" href="#contact">お問い合わせ</a>
+
+    <div class="hero-buttons">
+      <a class="btn" href="#jobs">
+        求人を見る
+      </a>
+
+      <a class="btn btn-light" href="#contact">
+        お問い合わせ
+      </a>
+    </div>
+
   </div>
+
 </section>
 
+
+<!-- COMPANY -->
+
 <section id="company">
+
   <div class="container">
+
     <div class="title">
       <h2>Company Introduction</h2>
       <p>会社紹介</p>
     </div>
 
     <div class="about">
+
       <div>
+
         <h3>FOUR STAR KING CO., LTD.</h3>
+
         <p>
-          We are a Myanmar-based recruitment and sending organization
-          supporting people who wish to work in Japan.
+          We are a Myanmar-based recruitment and sending
+          organization supporting people who wish to work in Japan.
         </p>
+
         <p>
           特定技能（SSW）、技能実習生など、日本で働きたい方を
           採用から出国前までサポートします。
         </p>
+
+        <p>
+          Our goal is to connect suitable candidates with
+          reliable employment opportunities in Japan.
+        </p>
+
       </div>
 
       <div class="about-box">
+
         <h3>Our Strengths</h3>
-        <p>✓ Japanese language support</p>
-        <p>✓ Job matching</p>
-        <p>✓ Visa & document support</p>
-        <p>✓ Pre-departure guidance</p>
-        <p>✓ Support for life in Japan</p>
+
+        <div class="check">✓ Japanese Language Support</div>
+        <div class="check">✓ Job Matching</div>
+        <div class="check">✓ Visa & Document Support</div>
+        <div class="check">✓ Pre-departure Guidance</div>
+        <div class="check">✓ Life Support in Japan</div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- JOBS -->
+
 <section id="jobs" class="jobs">
+
   <div class="container">
+
     <div class="title">
       <h2>Job Opportunities</h2>
       <p>特定技能・技能実習生 求人</p>
     </div>
 
     <div class="job-grid">
-      <div class="job">介護<span>Caregiver</span></div>
-      <div class="job">農業<span>Agriculture</span></div>
-      <div class="job">外食<span>Food Service</span></div>
-      <div class="job">建設<span>Construction</span></div>
-      <div class="job">ホテル<span>Hotel</span></div>
-      <div class="job">製造<span>Manufacturing</span></div>
+
+      <div class="job">
+        <div class="job-icon">👩‍⚕️</div>
+        <h3>介護</h3>
+        <span>Caregiver</span>
+      </div>
+
+      <div class="job">
+        <div class="job-icon">🌾</div>
+        <h3>農業</h3>
+        <span>Agriculture</span>
+      </div>
+
+      <div class="job">
+        <div class="job-icon">🍱</div>
+        <h3>外食</h3>
+        <span>Food Service</span>
+      </div>
+
+      <div class="job">
+        <div class="job-icon">🏗️</div>
+        <h3>建設</h3>
+        <span>Construction</span>
+      </div>
+
+      <div class="job">
+        <div class="job-icon">🏨</div>
+        <h3>ホテル</h3>
+        <span>Hotel</span>
+      </div>
+
+      <div class="job">
+        <div class="job-icon">🏭</div>
+        <h3>製造</h3>
+        <span>Manufacturing</span>
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- SUPPORT -->
+
 <section id="support">
+
   <div class="container">
+
     <div class="title">
       <h2>Support Service</h2>
       <p>サポートサービス</p>
     </div>
 
     <div class="cards">
+
       <div class="card">
+        <div class="card-icon">💼</div>
         <h3>Job Matching</h3>
-        <p>Suitable jobs are introduced according to each candidate's skills and experience.</p>
+        <p>
+          Suitable jobs are introduced according to each
+          candidate's skills and experience.
+        </p>
       </div>
 
       <div class="card">
+        <div class="card-icon">📄</div>
         <h3>Visa Support</h3>
-        <p>We support candidates with necessary documents and procedures.</p>
+        <p>
+          We support candidates with necessary documents
+          and procedures.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Pre-departure Support</h3>
-        <p>Japanese language and basic guidance before going to Japan.</p>
-      </div>
-
-      <div class="card">
-        <h3>Life Support</h3>
-        <p>Guidance for adapting to daily life and work in Japan.</p>
-      </div>
-
-      <div class="card">
+        <div class="card-icon">🗣️</div>
         <h3>Japanese Language</h3>
-        <p>Support for improving Japanese communication skills.</p>
+        <p>
+          Support for improving Japanese communication
+          and workplace skills.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Career Support</h3>
-        <p>We help candidates build a better career in Japan.</p>
+        <div class="card-icon">✈️</div>
+        <h3>Pre-departure Support</h3>
+        <p>
+          Guidance and preparation before travelling
+          to Japan.
+        </p>
       </div>
+
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <h3>Life Support</h3>
+        <p>
+          Guidance for adapting to daily life and work
+          in Japan.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Career Support</h3>
+        <p>
+          We help candidates build a better career
+          and future in Japan.
+        </p>
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- LIFE / PROCESS -->
+
 <section id="life" class="jobs">
+
   <div class="container">
+
     <div class="title">
       <h2>Working & Living in Japan</h2>
       <p>日本での生活</p>
     </div>
 
-    <div class="steps">
+    <div class="process">
+
       <div class="step">
         <div class="step-number">1</div>
         <h3>相談・登録</h3>
-        <p>Contact us and register as a candidate.</p>
+        <p>
+          Contact us and register as a candidate.
+        </p>
       </div>
 
       <div class="step">
         <div class="step-number">2</div>
         <h3>求人紹介</h3>
-        <p>We introduce suitable job opportunities.</p>
+        <p>
+          We introduce suitable job opportunities.
+        </p>
       </div>
 
       <div class="step">
         <div class="step-number">3</div>
         <h3>面接</h3>
-        <p>Attend an interview with the Japanese company.</p>
+        <p>
+          Attend an interview with the Japanese company.
+        </p>
       </div>
 
       <div class="step">
         <div class="step-number">4</div>
         <h3>書類・ビザ</h3>
-        <p>Complete necessary documents and procedures.</p>
+        <p>
+          Complete necessary documents and procedures.
+        </p>
       </div>
 
       <div class="step">
         <div class="step-number">5</div>
         <h3>出国</h3>
-        <p>Prepare for departure and travel to Japan.</p>
+        <p>
+          Prepare for departure and travel to Japan.
+        </p>
       </div>
 
       <div class="step">
         <div class="step-number">6</div>
         <h3>日本で勤務</h3>
-        <p>Start working and build your future in Japan.</p>
+        <p>
+          Start working and build your future in Japan.
+        </p>
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- CONTACT -->
+
 <section id="contact" class="contact">
+
   <div class="container">
+
     <div class="title">
       <h2>Contact Us</h2>
       <p>お問い合わせ</p>
     </div>
 
-    <div class="contact-info">
+    <div class="contact-grid">
 
       <div class="contact-box">
+
         <h3>FOUR STAR KING CO., LTD.</h3>
 
         <p>
-          📞 <a href="tel:+959456168957">
-          +95 9 456 168 957
+          📞
+          <a href="tel:+959456168957">
+            +95 9 456 168 957
           </a>
         </p>
 
         <p>
-          ✉️ <a href="mailto:fourstarking77@gmail.com">
-          fourstarking77@gmail.com
+          ✉️
+          <a href="mailto:fourstarking77@gmail.com">
+            fourstarking77@gmail.com
           </a>
         </p>
 
@@ -425,26 +833,67 @@ footer{
           9 Miles, Mayangone Township,<br>
           Yangon, Myanmar
         </p>
+
       </div>
 
-      <div class="contact-box">
-        <h3>Facebook</h3>
-        <p>Follow us for the latest job opportunities and announcements.</p>
 
-        <a class="btn"
-        href="https://www.facebook.com/share/1GNRMm5jwu/?mibextid=wwXIfr"
-        target="_blank">
-        Visit Facebook
+      <div class="contact-box">
+
+        <h3>Facebook</h3>
+
+        <p>
+          Follow us for the latest job opportunities
+          and announcements.
+        </p>
+
+        <a
+          class="btn"
+          href="https://www.facebook.com/share/1GNRMm5jwu/?mibextid=wwXIfr"
+          target="_blank">
+          Visit Facebook
         </a>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
+
 <footer>
+
+  <div class="footer-logo">
+    FOUR STAR KING CO., LTD.
+  </div>
+
   © 2026 FOUR STAR KING CO., LTD. All Rights Reserved.
+
 </footer>
+
+
+<script>
+
+function toggleMenu(){
+
+  const menu = document.getElementById("menu");
+
+  menu.classList.toggle("active");
+
+}
+
+document.querySelectorAll("nav a").forEach(function(link){
+
+  link.addEventListener("click",function(){
+
+    document.getElementById("menu").classList.remove("active");
+
+  });
+
+});
+
+</script>
 
 </body>
 </html>
