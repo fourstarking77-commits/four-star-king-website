@@ -475,7 +475,87 @@ footer{
   .title h2{
     font-size:30px;
   }
+.menu-btn{
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  background:#0b3d91;
+  color:white;
+  width:42px;
+  height:42px;
+  border-radius:10px;
+  font-size:23px;
 }
+
+#menu{
+  display:none;
+  position:absolute;
+  top:70px;
+  right:20px;
+  width:220px;
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  z-index:1000;
+}
+
+#menu.active{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+#menu a{
+  display:block;
+  padding:12px 15px;
+  text-align:left;
+}
+@media (max-width:768px){
+
+  .nav{
+    position:relative;
+  }
+
+  .menu-btn{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    background:#0b3d91;
+    color:white;
+    width:42px;
+    height:42px;
+    border-radius:10px;
+    font-size:23px;
+  }
+
+  #menu{
+    display:none !important;
+    position:absolute;
+    top:60px;
+    right:15px;
+    width:220px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    z-index:1000;
+    flex-direction:column;
+  }
+
+  #menu.active{
+    display:flex !important;
+  }
+
+  #menu a{
+    display:block;
+    padding:12px 15px;
+    text-align:left;
+  }
+
+}
+
+
 </style>
 </head>
 
