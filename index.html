@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>FOUR STAR KING CO., LTD. | Japan Career Support</title>
 
+<meta name="description" content="FOUR STAR KING CO., LTD. Myanmar to Japan career support and recruitment.">
+
 <style>
+
+/* =========================
+   RESET
+========================= */
+
 *{
   margin:0;
   padding:0;
@@ -18,529 +26,537 @@ html{
 }
 
 body{
-  font-family:Arial,"Noto Sans Myanmar",sans-serif;
-  color:#1f2937;
-  line-height:1.7;
+  font-family:Arial,"Noto Sans JP",sans-serif;
+  color:#172033;
   background:#fff;
+  line-height:1.7;
 }
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* =========================
+   HEADER
+========================= */
 
 header{
   position:sticky;
   top:0;
-  z-index:1000;
-  background:rgba(255,255,255,.97);
-  box-shadow:0 2px 18px rgba(0,0,0,.08);
+  z-index:5000;
+  background:#fff;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .nav{
+  width:90%;
   max-width:1200px;
+  height:80px;
   margin:auto;
-  padding:16px 22px;
   display:flex;
   align-items:center;
   justify-content:space-between;
+  position:relative;
 }
 
-.logo{
-  color:#0b3d91;
-  font-size:22px;
-  font-weight:800;
-  line-height:1.1;
+.logo img{
+  width:75px;
+  height:75px;
+  object-fit:contain;
 }
 
-.logo span{
-  display:block;
-  color:#777;
-  font-size:11px;
-  letter-spacing:2px;
-  margin-top:4px;
-}
-
-nav{
+#menu{
   display:flex;
   align-items:center;
+  gap:28px;
 }
 
-nav a{
-  color:#333;
-  text-decoration:none;
-  margin-left:24px;
-  font-size:14px;
-  font-weight:600;
+#menu a{
+  font-size:15px;
+  font-weight:bold;
+  color:#172033;
+  padding:8px 4px;
+  transition:.3s;
 }
 
-nav a:hover{
+#menu a:hover{
   color:#0b3d91;
 }
 
 .menu-btn{
   display:none;
-  border:0;
-  background:#0b3d91;
-  color:white;
-  width:42px;
-  height:42px;
+  width:44px;
+  height:44px;
+  border:none;
   border-radius:10px;
-  font-size:23px;
+  background:#0b3d91;
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
-  min-height:650px;
+  min-height:680px;
+  background-image:
+    linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.15)),
+    url("63850E19-059F-4CA1-A2CF-CCBF75E996F0.png");
+  background-size:cover;
+  background-position:center;
   display:flex;
   align-items:center;
-  background:linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)),url("63850E19-059F-4CA1-A2CF-CCBF75E996F0.png") center/cover no-repeat;
+}
 
 .hero-inner{
+  width:90%;
   max-width:1200px;
-  width:100%;
   margin:auto;
-  padding:90px 22px;
+}
+
+.hero-content{
+  max-width:650px;
+  padding:60px 0;
 }
 
 .badge{
   display:inline-block;
-  background:#dceaff;
+  background:#e9f2ff;
   color:#0b3d91;
-  padding:7px 15px;
+  padding:10px 20px;
   border-radius:30px;
-  font-size:13px;
+  font-size:15px;
   font-weight:bold;
-  margin-bottom:22px;
+  margin-bottom:25px;
 }
 
 .hero h1{
-  color:#0b3d91;
   font-size:58px;
-  line-height:1.08;
-  max-width:780px;
-  margin-bottom:22px;
+  line-height:1.1;
+  margin-bottom:20px;
+  color:#101b2f;
 }
 
 .hero h2{
-  font-size:27px;
+  font-size:30px;
   margin-bottom:20px;
+  color:#101b2f;
 }
 
 .hero p{
-  max-width:680px;
-  color:#5b6472;
   font-size:18px;
+  color:#172033;
+  margin-bottom:30px;
+  max-width:600px;
 }
 
 .hero-buttons{
   display:flex;
-  gap:14px;
-  margin-top:32px;
+  gap:15px;
   flex-wrap:wrap;
 }
 
 .btn{
   display:inline-block;
-  padding:14px 28px;
-  border-radius:30px;
+  padding:15px 32px;
+  border-radius:35px;
+  font-weight:bold;
+  font-size:16px;
+  border:2px solid #0b3d91;
+  transition:.3s;
+}
+
+.btn-primary{
   background:#0b3d91;
   color:#fff;
-  text-decoration:none;
-  font-weight:bold;
-  transition:.2s;
 }
 
-.btn:hover{
-  background:#06295f;
-  transform:translateY(-2px);
+.btn-primary:hover{
+  background:#082e6d;
 }
 
-.btn-light{
-  background:white;
+.btn-white{
+  background:#fff;
   color:#0b3d91;
-  border:1px solid #d7e2f5;
 }
 
-/* COMMON */
+.btn-white:hover{
+  background:#eef4ff;
+}
+
+/* =========================
+   SECTION
+========================= */
 
 section{
-  padding:85px 22px;
+  padding:80px 0;
 }
 
-.container{
-  max-width:1120px;
-  margin:auto;
-}
-
-.title{
+.section-title{
   text-align:center;
-  margin-bottom:48px;
+  margin-bottom:45px;
 }
 
-.title h2{
+.section-title .small{
   color:#0b3d91;
-  font-size:36px;
-  margin-bottom:5px;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:2px;
 }
 
-.title p{
-  color:#7b8491;
+.section-title h2{
+  font-size:38px;
+  margin-top:8px;
+  color:#14213d;
 }
 
-/* COMPANY */
+.section-title p{
+  margin-top:10px;
+  color:#667085;
+}
 
-.about{
+/* =========================
+   COMPANY
+========================= */
+
+.company{
+  background:#f8fafc;
+}
+
+.company-grid{
   display:grid;
-  grid-template-columns:1.2fr .8fr;
+  grid-template-columns:1fr 1fr;
   gap:45px;
   align-items:center;
 }
 
-.about h3{
+.company-text h3{
+  font-size:30px;
+  margin-bottom:20px;
+}
+
+.company-text p{
+  margin-bottom:18px;
+  color:#596579;
+}
+
+.company-box{
+  background:#fff;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.company-row{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:15px 0;
+  border-bottom:1px solid #eee;
+}
+
+.company-row:last-child{
+  border-bottom:none;
+}
+
+.company-row strong{
   color:#0b3d91;
-  font-size:25px;
-  margin-bottom:15px;
 }
 
-.about p{
-  color:#5d6673;
-  margin-bottom:15px;
-}
-
-.about-box{
-  background:#f3f7fd;
-  border-radius:22px;
-  padding:32px;
-  border:1px solid #e2ebf8;
-}
-
-.about-box h3{
-  font-size:22px;
-}
-
-.check{
-  padding:7px 0;
-  color:#374151;
-}
-
-/* JOBS */
+/* =========================
+   JOBS
+========================= */
 
 .jobs{
-  background:#f6f8fc;
+  background:#fff;
 }
 
 .job-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  gap:22px;
 }
 
-.job{
-  background:white;
+.job-card{
+  background:#fff;
+  border:1px solid #e6eaf0;
   border-radius:18px;
-  padding:28px 20px;
-  text-align:center;
-  box-shadow:0 5px 25px rgba(0,0,0,.06);
-  border:1px solid #edf0f5;
-  transition:.2s;
+  padding:28px;
+  box-shadow:0 8px 25px rgba(0,0,0,.05);
+  transition:.3s;
 }
 
-.job:hover{
+.job-card:hover{
   transform:translateY(-5px);
-  box-shadow:0 12px 30px rgba(11,61,145,.13);
+  box-shadow:0 12px 30px rgba(0,0,0,.10);
 }
 
 .job-icon{
-  font-size:35px;
-  margin-bottom:10px;
-}
-
-.job h3{
-  color:#0b3d91;
-  font-size:21px;
-}
-
-.job span{
-  display:block;
-  color:#777;
-  font-size:13px;
-  margin-top:3px;
-}
-
-/* SUPPORT */
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.card{
-  padding:30px;
-  background:white;
-  border:1px solid #e8edf5;
-  border-radius:18px;
-  box-shadow:0 5px 22px rgba(0,0,0,.05);
-}
-
-.card-icon{
-  font-size:30px;
-  margin-bottom:12px;
-}
-
-.card h3{
-  color:#0b3d91;
-  margin-bottom:10px;
-}
-
-.card p{
-  color:#697280;
-  font-size:14px;
-}
-
-/* PROCESS */
-
-.process{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.step{
-  position:relative;
-  padding:30px;
-  border:1px solid #e5e9f0;
-  border-radius:18px;
-  background:white;
-}
-
-.step-number{
-  width:45px;
-  height:45px;
-  border-radius:50%;
-  background:#0b3d91;
-  color:white;
+  width:55px;
+  height:55px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-weight:bold;
-  margin-bottom:15px;
-}
-
-.step h3{
-  margin-bottom:8px;
-  color:#25324a;
-}
-
-.step p{
-  color:#6b7280;
-  font-size:14px;
-}
-
-/* CONTACT */
-
-.contact{
-  background:#0b3d91;
-  color:white;
-}
-
-.contact .title h2{
-  color:white;
-}
-
-.contact .title p{
-  color:#d8e5ff;
-}
-
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
-}
-
-.contact-box{
-  background:rgba(255,255,255,.1);
-  padding:32px;
-  border-radius:20px;
-  border:1px solid rgba(255,255,255,.15);
-}
-
-.contact-box h3{
+  background:#eaf2ff;
+  border-radius:15px;
+  font-size:27px;
   margin-bottom:18px;
 }
 
-.contact-box p{
-  margin:13px 0;
+.job-card h3{
+  font-size:21px;
+  margin-bottom:10px;
 }
 
-.contact-box a{
-  color:white;
-  text-decoration:none;
+.job-card p{
+  color:#667085;
 }
 
-.contact .btn{
-  background:white;
-  color:#0b3d91;
-  margin-top:10px;
+/* =========================
+   SUPPORT
+========================= */
+
+.support{
+  background:#f8fafc;
 }
 
-.contact .btn:hover{
-  background:#edf4ff;
+.support-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
 
-/* FOOTER */
-
-footer{
-  background:#061f48;
-  color:#cbd5e1;
+.support-card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
   text-align:center;
-  padding:28px 15px;
-  font-size:13px;
+  box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
-.footer-logo{
-  color:white;
+.support-card .icon{
+  font-size:35px;
+  margin-bottom:15px;
+}
+
+.support-card h3{
+  margin-bottom:10px;
+}
+
+/* =========================
+   JAPAN LIFE
+========================= */
+
+.life{
+  background:#fff;
+}
+
+.life-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.life-card{
+  padding:30px;
+  border-radius:18px;
+  background:#f8fafc;
+  border:1px solid #e7ebf0;
+}
+
+.life-card h3{
+  color:#0b3d91;
+  margin-bottom:10px;
+}
+
+.life-card p{
+  color:#667085;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+  background:#0b3d91;
+  color:#fff;
+}
+
+.process .section-title h2,
+.process .section-title p,
+.process .section-title .small{
+  color:#fff;
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:15px;
+}
+
+.process-card{
+  text-align:center;
+  padding:20px 10px;
+}
+
+.process-number{
+  width:50px;
+  height:50px;
+  margin:0 auto 15px;
+  border:2px solid #fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   font-weight:bold;
-  font-size:17px;
+}
+
+.process-card h3{
+  font-size:15px;
   margin-bottom:5px;
 }
 
-/* MOBILE */
-
-@media(max-width:800px){
-
-  .nav{
-    padding:14px 18px;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  nav{
-    display:none;
-    position:absolute;
-    top:72px;
-    left:0;
-    width:100%;
-    background:white;
-    flex-direction:column;
-    padding:12px 20px 20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-  }
-
-  nav.active{
-    display:flex;
-  }
-
-  nav a{
-    width:100%;
-    margin:0;
-    padding:13px 5px;
-    border-bottom:1px solid #eee;
-  }
-
-  .hero{
-    min-height:600px;
-  }
-
-  .hero-inner{
-    padding:70px 22px;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }
-
-  .hero h2{
-    font-size:22px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .about,
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
-
-  .job-grid,
-  .cards,
-  .process{
-    grid-template-columns:1fr;
-  }
-
-  section{
-    padding:65px 18px;
-  }
-
-  .title h2{
-    font-size:30px;
-  }
-.menu-btn{
-  display:flex !important;
-  align-items:center;
-  justify-content:center;
-  background:#0b3d91;
-  color:white;
-  width:42px;
-  height:42px;
-  border-radius:10px;
-  font-size:23px;
+.process-card p{
+  font-size:13px;
+  opacity:.85;
 }
 
-#menu{
-  display:none;
-  position:absolute;
-  top:70px;
-  right:20px;
-  width:220px;
-  background:white;
-  padding:15px;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-  z-index:1000;
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  background:#f8fafc;
 }
 
-#menu.active{
+.contact-box{
+  max-width:850px;
+  margin:auto;
+  background:#fff;
+  padding:45px;
+  border-radius:25px;
+  box-shadow:0 10px 35px rgba(0,0,0,.08);
+  text-align:center;
+}
+
+.contact-box h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.contact-box p{
+  color:#667085;
+  margin-bottom:25px;
+}
+
+.contact-info{
   display:flex;
-  flex-direction:column;
-  gap:5px;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-bottom:30px;
 }
 
-#menu a{
-  display:block;
-  padding:12px 15px;
-  text-align:left;
+.contact-item{
+  padding:12px 18px;
+  background:#f1f5f9;
+  border-radius:10px;
 }
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#101828;
+  color:#fff;
+  padding:50px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+  margin-bottom:35px;
+}
+
+.footer-logo{
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+footer p{
+  color:#b8c0cc;
+}
+
+footer h3{
+  margin-bottom:15px;
+}
+
+.footer-links a{
+  display:block;
+  color:#b8c0cc;
+  margin-bottom:8px;
+}
+
+.footer-bottom{
+  border-top:1px solid #263142;
+  padding-top:20px;
+  text-align:center;
+  color:#98a2b3;
+  font-size:13px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width:768px){
 
   .nav{
-    position:relative;
+    height:70px;
+    width:92%;
+  }
+
+  .logo img{
+    width:62px;
+    height:62px;
   }
 
   .menu-btn{
     display:flex !important;
     align-items:center;
     justify-content:center;
-    background:#0b3d91;
-    color:white;
-    width:42px;
-    height:42px;
-    border-radius:10px;
-    font-size:23px;
   }
 
   #menu{
     display:none !important;
     position:absolute;
-    top:60px;
-    right:15px;
-    width:220px;
-    background:white;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-    z-index:1000;
+    top:65px;
+    right:0;
+    width:230px;
+    background:#fff;
+    padding:12px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
     flex-direction:column;
+    align-items:stretch;
+    gap:0;
   }
 
   #menu.active{
@@ -549,434 +565,213 @@ footer{
 
   #menu a{
     display:block;
-    padding:12px 15px;
-    text-align:left;
+    width:100%;
+    padding:13px 15px;
+    border-bottom:1px solid #eee;
+    font-size:16px;
+  }
+
+  #menu a:last-child{
+    border-bottom:none;
+  }
+
+  .hero{
+    min-height:700px;
+    background-position:center;
+    align-items:flex-start;
+  }
+
+  .hero-inner{
+    width:90%;
+  }
+
+  .hero-content{
+    padding:70px 0 40px;
+  }
+
+  .badge{
+    font-size:13px;
+    padding:9px 15px;
+  }
+
+  .hero h1{
+    font-size:42px;
+    line-height:1.1;
+  }
+
+  .hero h2{
+    font-size:25px;
+    line-height:1.4;
+  }
+
+  .hero p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .btn{
+    text-align:center;
+    width:100%;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+  .section-title h2{
+    font-size:30px;
+  }
+
+  .company-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .job-grid{
+    grid-template-columns:1fr;
+  }
+
+  .support-grid{
+    grid-template-columns:1fr;
+  }
+
+  .life-grid{
+    grid-template-columns:1fr;
+  }
+
+  .process-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .contact-box{
+    padding:30px 20px;
+  }
+
+  .contact-box h3{
+    font-size:25px;
   }
 
 }
-/* FINAL MOBILE MENU FIX */
-@media (max-width:768px){
 
-  header .nav{
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width:400px){
+
+  .hero h1{
+    font-size:36px;
   }
 
-  header .nav > .menu-btn{
-    display:flex !important;
-    align-items:center;
-    justify-content:center;
-    width:42px;
-    height:42px;
-    background:#0b3d91;
-    color:white;
-    border:0;
-    border-radius:10px;
-    font-size:23px;
-    cursor:pointer;
+  .hero h2{
+    font-size:22px;
   }
 
-  header .nav > #menu{
-    display:none !important;
-    position:absolute;
-    top:70px;
-    right:15px;
-    width:220px;
-    background:white;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,.18);
-    z-index:9999;
-    flex-direction:column;
+  .hero p{
+    font-size:15px;
   }
 
-  header .nav > #menu.active{
-    display:flex !important;
+  .process-grid{
+    grid-template-columns:1fr 1fr;
   }
 
-  header .nav > #menu a{
-    display:block !important;
-    width:100%;
-    padding:12px 15px;
-    text-align:left;
-    box-sizing:border-box;
-  }
 }
 
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
   <div class="nav">
 
-    <div class="logo">
-      <img src="IMG_2840.jpeg" alt="FOUR STAR KING CO., LTD." style="height:75px;width:auto;display:block;">
-    </div>
+    <a href="#home" class="logo">
+      <img src="IMG_2840.jpeg" alt="FOUR STAR KING CO., LTD.">
+    </a>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open Menu"
+      aria-expanded="false">
+      ☰
+    </button>
 
     <nav id="menu">
+
       <a href="#home">Home</a>
+
       <a href="#company">会社紹介</a>
+
       <a href="#jobs">求人</a>
+
       <a href="#support">Support</a>
+
       <a href="#life">日本での生活</a>
+
       <a href="#contact">お問い合わせ</a>
+
     </nav>
 
   </div>
+
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
 
 <section class="hero" id="home">
 
   <div class="hero-inner">
 
-    <div class="badge">
-      🇯🇵 JAPAN CAREER SUPPORT
-    </div>
+    <div class="hero-content">
 
-    <h1>
-      Start Your Career<br>
-      in Japan
-    </h1>
-
-    <h2>
-      日本で、あなたの未来をはじめよう。
-    </h2>
-
-    <p>
-      FOUR STAR KING CO., LTD. supports Myanmar people
-      who want to work, live and build their future in Japan.
-    </p>
-
-    <div class="hero-buttons">
-      <a class="btn" href="#jobs">
-        求人を見る
-      </a>
-
-      <a class="btn btn-light" href="#contact">
-        お問い合わせ
-      </a>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- COMPANY -->
-
-<section id="company">
-
-  <div class="container">
-
-    <div class="title">
-      <h2>Company Introduction</h2>
-      <p>会社紹介</p>
-    </div>
-
-    <div class="about">
-
-      <div>
-
-        <h3>FOUR STAR KING CO., LTD.</h3>
-
-        <p>
-          We are a Myanmar-based recruitment and sending
-          organization supporting people who wish to work in Japan.
-        </p>
-
-        <p>
-          特定技能（SSW）、技能実習生など、日本で働きたい方を
-          採用から出国前までサポートします。
-        </p>
-
-        <p>
-          Our goal is to connect suitable candidates with
-          reliable employment opportunities in Japan.
-        </p>
-
+      <div class="badge">
+        🇯🇵 JAPAN CAREER SUPPORT
       </div>
 
-      <div class="about-box">
-
-        <h3>Our Strengths</h3>
-
-        <div class="check">✓ Japanese Language Support</div>
-        <div class="check">✓ Job Matching</div>
-        <div class="check">✓ Visa & Document Support</div>
-        <div class="check">✓ Pre-departure Guidance</div>
-        <div class="check">✓ Life Support in Japan</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- JOBS -->
-
-<section id="jobs" class="jobs">
-
-  <div class="container">
-
-    <div class="title">
-      <h2>Job Opportunities</h2>
-      <p>特定技能・技能実習生 求人</p>
-    </div>
-
-    <div class="job-grid">
-
-      <div class="job">
-        <div class="job-icon">👩‍⚕️</div>
-        <h3>介護</h3>
-        <span>Caregiver</span>
-      </div>
-
-      <div class="job">
-        <div class="job-icon">🌾</div>
-        <h3>農業</h3>
-        <span>Agriculture</span>
-      </div>
-
-      <div class="job">
-        <div class="job-icon">🍱</div>
-        <h3>外食</h3>
-        <span>Food Service</span>
-      </div>
-
-      <div class="job">
-        <div class="job-icon">🏗️</div>
-        <h3>建設</h3>
-        <span>Construction</span>
-      </div>
-
-      <div class="job">
-        <div class="job-icon">🏨</div>
-        <h3>ホテル</h3>
-        <span>Hotel</span>
-      </div>
-
-      <div class="job">
-        <div class="job-icon">🏭</div>
-        <h3>製造</h3>
-        <span>Manufacturing</span>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- SUPPORT -->
-
-<section id="support">
-
-  <div class="container">
-
-    <div class="title">
-      <h2>Support Service</h2>
-      <p>サポートサービス</p>
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="card-icon">💼</div>
-        <h3>Job Matching</h3>
-        <p>
-          Suitable jobs are introduced according to each
-          candidate's skills and experience.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">📄</div>
-        <h3>Visa Support</h3>
-        <p>
-          We support candidates with necessary documents
-          and procedures.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🗣️</div>
-        <h3>Japanese Language</h3>
-        <p>
-          Support for improving Japanese communication
-          and workplace skills.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">✈️</div>
-        <h3>Pre-departure Support</h3>
-        <p>
-          Guidance and preparation before travelling
-          to Japan.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🏠</div>
-        <h3>Life Support</h3>
-        <p>
-          Guidance for adapting to daily life and work
-          in Japan.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">📈</div>
-        <h3>Career Support</h3>
-        <p>
-          We help candidates build a better career
-          and future in Japan.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- LIFE / PROCESS -->
-
-<section id="life" class="jobs">
-
-  <div class="container">
-
-    <div class="title">
-      <h2>Working & Living in Japan</h2>
-      <p>日本での生活</p>
-    </div>
-
-    <div class="process">
-
-      <div class="step">
-        <div class="step-number">1</div>
-        <h3>相談・登録</h3>
-        <p>
-          Contact us and register as a candidate.
-        </p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3>求人紹介</h3>
-        <p>
-          We introduce suitable job opportunities.
-        </p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3>面接</h3>
-        <p>
-          Attend an interview with the Japanese company.
-        </p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">4</div>
-        <h3>書類・ビザ</h3>
-        <p>
-          Complete necessary documents and procedures.
-        </p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">5</div>
-        <h3>出国</h3>
-        <p>
-          Prepare for departure and travel to Japan.
-        </p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">6</div>
-        <h3>日本で勤務</h3>
-        <p>
-          Start working and build your future in Japan.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-  <div class="container">
-
-    <div class="title">
-      <h2>Contact Us</h2>
-      <p>お問い合わせ</p>
-    </div>
-
-    <div class="contact-grid">
-
-      <div class="contact-box">
-
-        <h3>FOUR STAR KING CO., LTD.</h3>
-
-        <p>
-          📞
-          <a href="tel:+959456168957">
-            +95 9 456 168 957
-          </a>
-        </p>
-
-        <p>
-          ✉️
-          <a href="mailto:fourstarking77@gmail.com">
-            fourstarking77@gmail.com
-          </a>
-        </p>
-
-        <p>
-          📍 No(29), Bo Nyan Na (2) Street,<br>
-          9 Miles, Mayangone Township,<br>
-          Yangon, Myanmar
-        </p>
-
-      </div>
-
-
-      <div class="contact-box">
-
-        <h3>Facebook</h3>
-
-        <p>
-          Follow us for the latest job opportunities
-          and announcements.
-        </p>
-
-        <a
-          class="btn"
-          href="https://www.facebook.com/share/1GNRMm5jwu/?mibextid=wwXIfr"
-          target="_blank">
-          Visit Facebook
+      <h1>
+        Start Your Career<br>
+        in Japan
+      </h1>
+
+      <h2>
+        日本で、あなたの未来をはじめよう。
+      </h2>
+
+      <p>
+        FOUR STAR KING CO., LTD. supports Myanmar
+        people who want to work, live and build their
+        future in Japan.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#jobs" class="btn btn-primary">
+          求人を見る
+        </a>
+
+        <a href="#contact" class="btn btn-white">
+          お問い合わせ
         </a>
 
       </div>
@@ -988,32 +783,649 @@ footer{
 </section>
 
 
-<footer>
+<!-- =========================
+     COMPANY
+========================= -->
 
-  <div class="footer-logo">
-    FOUR STAR KING CO., LTD.
+<section class="company" id="company">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        ABOUT US
+      </div>
+
+      <h2>
+        Company Introduction
+      </h2>
+
+      <p>
+        日本で働きたいミャンマー人材をサポートします
+      </p>
+
+    </div>
+
+
+    <div class="company-grid">
+
+      <div class="company-text">
+
+        <h3>
+          FOUR STAR KING CO., LTD.
+        </h3>
+
+        <p>
+          私たちはミャンマー人材と日本企業をつなぐ
+          人材サポート会社です。
+        </p>
+
+        <p>
+          特定技能、技能実習など、日本で働きたい
+          ミャンマー人の皆様をサポートしています。
+        </p>
+
+        <p>
+          日本語教育から求人紹介、渡日前の準備まで、
+          安心して日本で働けるようサポートします。
+        </p>
+
+      </div>
+
+
+      <div class="company-box">
+
+        <div class="company-row">
+          <strong>会社名</strong>
+          <span>FOUR STAR KING CO., LTD.</span>
+        </div>
+
+        <div class="company-row">
+          <strong>設立</strong>
+          <span>2019年</span>
+        </div>
+
+        <div class="company-row">
+          <strong>所在地</strong>
+          <span>Yangon, Myanmar</span>
+        </div>
+
+        <div class="company-row">
+          <strong>対応分野</strong>
+          <span>特定技能・技能実習</span>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
-  © 2026 FOUR STAR KING CO., LTD. All Rights Reserved.
+</section>
+
+
+<!-- =========================
+     JOBS
+========================= -->
+
+<section class="jobs" id="jobs">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        JOB OPPORTUNITIES
+      </div>
+
+      <h2>
+        求人情報
+      </h2>
+
+      <p>
+        日本で働くチャンスを見つけよう
+      </p>
+
+    </div>
+
+
+    <div class="job-grid">
+
+      <div class="job-card">
+        <div class="job-icon">👩‍⚕️</div>
+        <h3>介護</h3>
+        <p>
+          特定技能・介護分野の求人をサポートします。
+        </p>
+      </div>
+
+      <div class="job-card">
+        <div class="job-icon">🌾</div>
+        <h3>農業</h3>
+        <p>
+          日本の農業分野で働きたい人材をサポートします。
+        </p>
+      </div>
+
+      <div class="job-card">
+        <div class="job-icon">🍱</div>
+        <h3>外食</h3>
+        <p>
+          レストラン・飲食業界の求人をご紹介します。
+        </p>
+      </div>
+
+      <div class="job-card">
+        <div class="job-icon">🏗️</div>
+        <h3>建設</h3>
+        <p>
+          建設業界で働く人材の就職をサポートします。
+        </p>
+      </div>
+
+      <div class="job-card">
+        <div class="job-icon">🏨</div>
+        <h3>ホテル</h3>
+        <p>
+          ホテル・宿泊業界の求人をご紹介します。
+        </p>
+      </div>
+
+      <div class="job-card">
+        <div class="job-icon">🏭</div>
+        <h3>製造</h3>
+        <p>
+          工場・製造業分野の求人をサポートします。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SUPPORT
+========================= -->
+
+<section class="support" id="support">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        OUR SUPPORT
+      </div>
+
+      <h2>
+        Support Service
+      </h2>
+
+      <p>
+        日本へ行く前から日本での生活までサポート
+      </p>
+
+    </div>
+
+
+    <div class="support-grid">
+
+      <div class="support-card">
+
+        <div class="icon">📚</div>
+
+        <h3>
+          日本語サポート
+        </h3>
+
+        <p>
+          日本で生活・仕事をするための日本語を
+          サポートします。
+        </p>
+
+      </div>
+
+
+      <div class="support-card">
+
+        <div class="icon">📄</div>
+
+        <h3>
+          書類サポート
+        </h3>
+
+        <p>
+          必要な書類や応募準備をサポートします。
+        </p>
+
+      </div>
+
+
+      <div class="support-card">
+
+        <div class="icon">✈️</div>
+
+        <h3>
+          渡日前サポート
+        </h3>
+
+        <p>
+          日本へ出発するまでの準備をサポートします。
+        </p>
+
+      </div>
+
+
+      <div class="support-card">
+
+        <div class="icon">🏠</div>
+
+        <h3>
+          生活サポート
+        </h3>
+
+        <p>
+          日本で安心して生活できるようサポートします。
+        </p>
+
+      </div>
+
+
+      <div class="support-card">
+
+        <div class="icon">💼</div>
+
+        <h3>
+          就職サポート
+        </h3>
+
+        <p>
+          希望に合った仕事を見つけるサポートをします。
+        </p>
+
+      </div>
+
+
+      <div class="support-card">
+
+        <div class="icon">🤝</div>
+
+        <h3>
+          継続サポート
+        </h3>
+
+        <p>
+          日本で働き始めた後もサポートします。
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     JAPAN LIFE
+========================= -->
+
+<section class="life" id="life">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        LIFE IN JAPAN
+      </div>
+
+      <h2>
+        日本での生活
+      </h2>
+
+      <p>
+        日本で安心して暮らすために
+      </p>
+
+    </div>
+
+
+    <div class="life-grid">
+
+      <div class="life-card">
+
+        <h3>🏠 住まい</h3>
+
+        <p>
+          日本での住居や生活環境について
+          サポートします。
+        </p>
+
+      </div>
+
+
+      <div class="life-card">
+
+        <h3>🚆 交通</h3>
+
+        <p>
+          電車・バスなど日本の交通ルールや
+          利用方法を案内します。
+        </p>
+
+      </div>
+
+
+      <div class="life-card">
+
+        <h3>🏥 医療</h3>
+
+        <p>
+          病院・健康保険など日本で必要な
+          基本情報を案内します。
+        </p>
+
+      </div>
+
+
+      <div class="life-card">
+
+        <h3>💴 お金</h3>
+
+        <p>
+          銀行・給与・生活費など日本での
+          お金の基本を案内します。
+        </p>
+
+      </div>
+
+
+      <div class="life-card">
+
+        <h3>🗣️ 日本語</h3>
+
+        <p>
+          職場や日常生活で必要な日本語を
+          サポートします。
+        </p>
+
+      </div>
+
+
+      <div class="life-card">
+
+        <h3>🇯🇵 ルール</h3>
+
+        <p>
+          日本の生活ルールやマナーについて
+          分かりやすく案内します。
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="process">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        JAPAN WORK PROCESS
+      </div>
+
+      <h2>
+        日本で働くまでの流れ
+      </h2>
+
+      <p>
+        6つのステップでサポートします
+      </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <div class="process-number">1</div>
+        <h3>相談</h3>
+        <p>希望を確認</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">2</div>
+        <h3>求人紹介</h3>
+        <p>仕事を選択</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">3</div>
+        <h3>面接</h3>
+        <p>企業面接</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">4</div>
+        <h3>書類・ビザ</h3>
+        <p>申請サポート</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">5</div>
+        <h3>渡日前準備</h3>
+        <p>出発準備</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">6</div>
+        <h3>日本へ</h3>
+        <p>仕事スタート</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        CONTACT US
+      </div>
+
+      <h2>
+        お問い合わせ
+      </h2>
+
+      <p>
+        日本で働きたい方はお気軽にお問い合わせください。
+      </p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+      <h3>
+        Japan Career Support
+      </h3>
+
+      <p>
+        求人・特定技能・技能実習について
+        お気軽にご相談ください。
+      </p>
+
+
+      <div class="contact-info">
+
+        <div class="contact-item">
+          📞 +95 9 456 168 957
+        </div>
+
+        <div class="contact-item">
+          ✉️ fourstarking77@gmail.com
+        </div>
+
+      </div>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="mailto:fourstarking77@gmail.com"
+          class="btn btn-primary">
+          メールでお問い合わせ
+        </a>
+
+        <a
+          href="tel:+959456168957"
+          class="btn btn-white">
+          電話する
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="footer-logo">
+          FOUR STAR KING CO., LTD.
+        </div>
+
+        <p>
+          Myanmar → Japan<br>
+          Japan Career Support
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Menu
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="#home">Home</a>
+          <a href="#company">会社紹介</a>
+          <a href="#jobs">求人</a>
+          <a href="#support">Support</a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <p>
+          +95 9 456 168 957
+        </p>
+
+        <p>
+          fourstarking77@gmail.com
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 FOUR STAR KING CO., LTD. All Rights Reserved.
+
+    </div>
+
+  </div>
 
 </footer>
 
 
+<!-- =========================
+     MOBILE MENU JAVASCRIPT
+========================= -->
+
 <script>
 
-function toggleMenu(){
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
 
-  const menu = document.getElementById("menu");
+menuBtn.addEventListener("click", function(){
 
   menu.classList.toggle("active");
 
-}
+  const opened = menu.classList.contains("active");
 
-document.querySelectorAll("nav a").forEach(function(link){
+  menuBtn.setAttribute("aria-expanded", opened);
 
-  link.addEventListener("click",function(){
+  menuBtn.innerHTML = opened ? "✕" : "☰";
 
-    document.getElementById("menu").classList.remove("active");
+});
+
+
+/* Close menu after clicking a link */
+
+document.querySelectorAll("#menu a").forEach(function(link){
+
+  link.addEventListener("click", function(){
+
+    menu.classList.remove("active");
+
+    menuBtn.setAttribute("aria-expanded","false");
+
+    menuBtn.innerHTML = "☰";
 
   });
 
