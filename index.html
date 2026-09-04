@@ -554,7 +554,56 @@ footer{
   }
 
 }
+/* FINAL MOBILE MENU FIX */
+@media (max-width:768px){
 
+  header .nav{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  header .nav > .menu-btn{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    background:#0b3d91;
+    color:white;
+    border:0;
+    border-radius:10px;
+    font-size:23px;
+    cursor:pointer;
+  }
+
+  header .nav > #menu{
+    display:none !important;
+    position:absolute;
+    top:70px;
+    right:15px;
+    width:220px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+    z-index:9999;
+    flex-direction:column;
+  }
+
+  header .nav > #menu.active{
+    display:flex !important;
+  }
+
+  header .nav > #menu a{
+    display:block !important;
+    width:100%;
+    padding:12px 15px;
+    text-align:left;
+    box-sizing:border-box;
+  }
+}
 
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
